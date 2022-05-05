@@ -1,15 +1,23 @@
 #brandPage
     .alza
         &-btn
-            &__white
-                background-color: $c-white
-                color: $c-grey-6
-                @include btnStates($c-white)
+            @include btnAppearance(42, 14)
+            width: 166px
+            
+            &__usafa
+                background-color: $c-usafa
+                color: $c-white
+                @include btnStates($c-usafa)
 
-            &__normal
-                &__fixed
-                    @include btnAppearance(42, 14)
-                    width: 166px
+            &__blush
+                background-color: $c-blush
+                color: $c-white
+                @include btnStates($c-blush)
+
+            &__plum
+                background-color: $c-plum
+                color: $c-white
+                @include btnStates($c-plum)
 
         &-layout
             &__10
