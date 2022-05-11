@@ -7,6 +7,133 @@
 @import ../sass/partials/switcher
 @import ../sass/partials/revealer
 
+//preview - TO REMOVE
+body
+    background-color: $c-blue-light
+
 #brandPage
     @include roboto
     text-align: center
+    color: $c-usafa
+
+    .bp
+        &-container
+            @include flexVert
+            gap: 72px
+        
+        &-zigzag
+            @include flexVert
+            gap: 48px
+
+            &--unit
+                @include flexOr
+                justify-content: space-between
+                gap: 48px
+
+                &:nth-child(1) .bp-zigzag--caption
+                    background-color: $c-usafa
+
+                &:nth-child(2) .bp-zigzag--caption
+                    background-color: $c-blush
+
+                &:nth-child(3) .bp-zigzag--caption
+                    background-color: $c-plum
+                    
+            &--caption
+                color:  $c-white
+                flex: 1 1 0
+                @include flexVert
+                justify-content: center
+                align-items: center
+                gap: 48px
+                border-radius: 4px
+
+                p
+                    padding: 0 72px
+
+
+            &--image
+                flex: 1 1 0
+                border-radius: 4px
+
+        &-row
+            @include flexOr
+            justify-content: space-between
+            align-items: center
+
+            &--icons
+                margin-top: 48px
+                @include flexOr
+                justify-content: space-between
+
+            &--unit
+                @include flexVert
+                width: 64px
+
+        &-foil
+            position: relative
+
+            h3
+                color: $c-white
+                position: absolute
+                top: 72px
+                left: calc((100% - 488px) / 2)
+
+        &-column
+            @include flexOr
+            justify-content: space-between
+            align-items: center
+            gap: 48px
+
+            &--icons
+                @include flexVert
+                gap: 32px
+
+            &--unit
+                @include flexOr
+                align-items: center
+                gap: 48px
+
+                &--caption
+                    text-align: left
+
+                    h4
+                        text-transform: uppercase
+                        margin-bottom: 8px
+
+        &-video
+            @include flexVert
+            gap: 48px
+
+            &--unit
+                @include flexOr
+                gap: 48px
+
+                &:nth-child(1) .bp-video--caption
+                    background-color: $c-blush
+
+                &:nth-child(2) .bp-video--caption
+                    background-color: $c-laurel
+
+            &--caption
+                color:  $c-white
+                flex: 1 1 0
+                @include flexVert
+                justify-content: center
+                align-items: center
+                gap: 48px
+                border-radius: 4px
+
+        &-footer
+            @include flexVert
+            gap: 48px
+
+            &--icons
+                @include flexOr
+                gap: 48px
+
+            &--unit
+                flex: 1 1 0
+                @include flexVert
+                align-items: center
+                gap: 32px
