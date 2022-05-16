@@ -133,6 +133,53 @@
   }
 }
 
+@media only screen and (max-width: 350px) {
+  .mobile #brandPage .hdl1,
+  .mobileapp #brandPage .hdl1 {
+    font-size: 22px;
+    line-height: 27.5px;
+    font-weight: 700;
+  }
+  .mobile #brandPage .hdl2,
+  .mobileapp #brandPage .hdl2 {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+  .mobile #brandPage .hdl3,
+  .mobileapp #brandPage .hdl3 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  .mobile #brandPage .hdl4__row,
+  .mobileapp #brandPage .hdl4__row {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .mobile #brandPage .hdl4__column,
+  .mobileapp #brandPage .hdl4__column {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .mobile #brandPage .text__normal,
+  .mobileapp #brandPage .text__normal {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  .mobile #brandPage .text__small,
+  .mobileapp #brandPage .text__small {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+
 .category-description {
   padding: 0 !important;
 }
@@ -256,6 +303,16 @@
   }
 }
 
+@media only screen and (max-width: 350px) {
+  .mobile #brandPage .alza-btn,
+  .mobileapp #brandPage .alza-btn {
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    width: 144px;
+  }
+}
+
 #layout_switch {
   position: fixed;
   left: 20px;
@@ -346,6 +403,10 @@
   padding-bottom: 48px;
   margin: auto;
   width: 120px;
+}
+
+#brandPage .bp-toggle-content {
+  display: none;
 }
 
 #brandPage .bp-toggle-content.is-visible {
@@ -519,6 +580,10 @@ body {
   margin-top: 32px;
 }
 
+#brandPage .bp-row--image {
+  margin-bottom: -50px;
+}
+
 #brandPage .bp-row .text__normal {
   font-weight: 500;
 }
@@ -531,7 +596,7 @@ body {
 
 #brandPage .bp-foil h3 {
   color: #ffffff;
-  margin: 10% 15px 50% 15px;
+  margin: 8% 15px 32% 15px;
 }
 
 #brandPage .bp-column {
@@ -550,7 +615,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 48px;
 }
 
 #brandPage .bp-column--icons {
@@ -562,6 +626,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
+  margin-left: 24px;
 }
 
 #brandPage .bp-column--unit {
@@ -586,6 +651,10 @@ body {
 
 #brandPage .bp-column--unit--caption h4 {
   margin-bottom: 8px;
+}
+
+#brandPage .bp-column--image {
+  margin-bottom: -50px;
 }
 
 #brandPage .bp-video {
@@ -622,8 +691,8 @@ body {
 
 #brandPage .bp-video--caption {
   color: #ffffff;
-  -ms-flex-preferred-size: 41%;
-      flex-basis: 41%;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,8 +710,30 @@ body {
   border-radius: 4px;
 }
 
-#brandPage .bp-video iframe {
+#brandPage .bp-video--caption span {
+  display: block;
+}
+
+#brandPage .bp-video--container {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+
+#brandPage .bp-video--container div {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+#brandPage .bp-video--container div iframe {
   border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: blckock;
+  width: 100%;
+  height: 100%;
 }
 
 #brandPage .bp-footer {
@@ -711,7 +802,6 @@ body {
 }
 
 .layout-0 #brandPage .bp-column {
-  gap: 0;
   padding-left: 0;
 }
 
@@ -745,11 +835,82 @@ body {
   }
   .mobile #brandPage .bp-zigzag--unit,
   .mobileapp #brandPage .bp-zigzag--unit {
+    gap: 16px;
+  }
+  .mobile #brandPage .bp-zigzag--caption,
+  .mobileapp #brandPage .bp-zigzag--caption {
+    width: calc((100% - 16px) / 2);
+    gap: 24px;
+  }
+  .mobile #brandPage .bp-zigzag--caption p,
+  .mobileapp #brandPage .bp-zigzag--caption p {
+    padding: 0 32px;
+  }
+  .mobile #brandPage .bp-zigzag--image,
+  .mobileapp #brandPage .bp-zigzag--image {
+    width: calc((100% - 16px) / 2);
+  }
+  .mobile #brandPage .bp-row,
+  .mobileapp #brandPage .bp-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .mobile #brandPage .bp-row--image,
+  .mobileapp #brandPage .bp-row--image {
+    width: 50%;
+    padding: 0 0 32px 8%;
+    margin-bottom: -24px;
+  }
+  .mobile #brandPage .bp-row--icons,
+  .mobileapp #brandPage .bp-row--icons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 32px;
+  }
+  .mobile #brandPage .bp-row--unit,
+  .mobileapp #brandPage .bp-row--unit {
+    width: calc((100% - 32px * (3 - 1)) / 3);
+  }
+  .mobile #brandPage .bp-row--unit p,
+  .mobileapp #brandPage .bp-row--unit p {
+    margin: 0 15px;
+  }
+  .mobile #brandPage .bp-column,
+  .mobileapp #brandPage .bp-column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .mobile #brandPage .bp-column--image,
+  .mobileapp #brandPage .bp-column--image {
+    width: 50%;
+    margin-bottom: 16px;
+  }
+  .mobile #brandPage .bp-video,
+  .mobileapp #brandPage .bp-video {
     gap: 16px;
+  }
+  .mobile #brandPage .bp-video--unit,
+  .mobileapp #brandPage .bp-video--unit {
+    gap: 16px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .mobile #brandPage .bp-zigzag--unit,
+  .mobileapp #brandPage .bp-zigzag--unit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .mobile #brandPage .bp-zigzag--unit:nth-of-type(2) img,
   .mobileapp #brandPage .bp-zigzag--unit:nth-of-type(2) img {
@@ -772,46 +933,16 @@ body {
   .mobileapp #brandPage .bp-zigzag--image {
     width: 100%;
   }
-  .mobile #brandPage .bp-row,
-  .mobileapp #brandPage .bp-row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    padding-left: 0;
+  .mobile #brandPage .bp-foil h3,
+  .mobileapp #brandPage .bp-foil h3 {
+    margin-bottom: 42%;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
   }
-  .mobile #brandPage .bp-row--image,
-  .mobileapp #brandPage .bp-row--image {
-    width: 50%;
-    padding: 0 0 32px 8%;
-  }
-  .mobile #brandPage .bp-row--icons,
-  .mobileapp #brandPage .bp-row--icons {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 32px;
-  }
-  .mobile #brandPage .bp-row--unit,
-  .mobileapp #brandPage .bp-row--unit {
-    width: calc((100% - 32px * (3 - 1)) / 3);
-  }
-  .mobile #brandPage .bp-row p,
-  .mobileapp #brandPage .bp-row p {
-    margin: 0  15px;
-  }
-  .mobile #brandPage .bp-column,
-  .mobileapp #brandPage .bp-column {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .mobile #brandPage .bp-column--image,
-  .mobileapp #brandPage .bp-column--image {
-    width: 50%;
+  .mobile #brandPage .bp-video,
+  .mobileapp #brandPage .bp-video {
+    gap: 48px;
   }
   .mobile #brandPage .bp-video--unit,
   .mobileapp #brandPage .bp-video--unit {
@@ -833,6 +964,11 @@ body {
         -ms-flex-order: -1;
             order: -1;
   }
+  .mobile #brandPage .bp-video--caption span,
+  .mobileapp #brandPage .bp-video--caption span {
+    display: inline-block;
+    margin-left: 6px;
+  }
   .mobile #brandPage .bp-footer,
   .mobileapp #brandPage .bp-footer {
     gap: 32px;
@@ -848,5 +984,30 @@ body {
   .mobile #brandPage .bp-footer--unit,
   .mobileapp #brandPage .bp-footer--unit {
     gap: 16px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .mobile #brandPage .bp-row--unit img,
+  .mobileapp #brandPage .bp-row--unit img {
+    width: 48px;
+  }
+  .mobile #brandPage .bp-column--icons,
+  .mobileapp #brandPage .bp-column--icons {
+    margin-left: 0;
+    margin-top: 32px;
+  }
+  .mobile #brandPage .bp-column--unit,
+  .mobileapp #brandPage .bp-column--unit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
+  .mobile #brandPage .bp-column--unit p, .mobile #brandPage .bp-column--unit h4,
+  .mobileapp #brandPage .bp-column--unit p,
+  .mobileapp #brandPage .bp-column--unit h4 {
+    text-align: center;
   }
 }

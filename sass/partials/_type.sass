@@ -71,4 +71,30 @@
 
         .text__small
             @include type(12px, 1.5, 400)
+
+@media only screen and (max-width: 350px)
+    .mobile #brandPage,
+    .mobileapp #brandPage
+        .hdl1
+            @include type(22px, 1.25, 700)
+        
+        .hdl2
+            @include type(20px, 1.25, 500)
+
+        .hdl3
+            @include type(16px, 1.25, 500)
+
+        .hdl4__row
+            @include type(12px, 1.25, 400)
+            text-transform: uppercase
+
+        .hdl4__column
+            @include type(12px, 1.25, 500)
+            text-transform: uppercase
+
+        .text__normal
+            @include type(12px, 1.5, 400)
+
+        .text__small
+            @include type(12px, 1.5, 400)
             
