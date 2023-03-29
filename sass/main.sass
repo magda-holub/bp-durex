@@ -6,10 +6,6 @@
 @import ../sass/partials/switcher
 @import ../sass/partials/revealer
 
-//preview - TO REMOVE
-body
-    background-color: $c-blue-light
-
 #brandPage
     @include roboto
     text-align: center
@@ -30,8 +26,11 @@ body
 
         &-perex
             p
-                margin-top: 48px
                 color: $c-grey-6
+
+            h2
+                color: $c-usafa
+                margin-bottom: 48px
         
         &-zigzag
             @include flexVert
@@ -62,6 +61,10 @@ body
 
                 p
                     padding: 0 72px
+                    color: $c-white
+
+                h2
+                    color: $c-white
 
 
             &--image
@@ -86,11 +89,12 @@ body
 
                 h4
                     margin-top: 32px
+                    color: $c-usafa
 
             &--image
                 margin-bottom: -50px
 
-            .text__normal
+            p.text__normal
                 font-weight: 500
 
         &-foil
@@ -122,6 +126,7 @@ body
 
                     h4
                         margin-bottom: 8px
+                        color: $c-usafa
 
             &--image
                 margin-bottom: -50px
@@ -148,6 +153,9 @@ body
                 align-items: center
                 gap: 48px
                 border-radius: 4px
+
+                h3
+                    color: $c-white
                 
                 span
                     display: block
@@ -186,6 +194,9 @@ body
 
             .text__normal
                 font-weight: 500
+
+            h3
+                color: $c-usafa
 
 // layout 0
 .layout-0 #brandPage,
@@ -309,13 +320,17 @@ body
                     flex-direction: column
 
                     &:nth-child(1) .bp-video--caption
-                        color: $c-blush
                         background-color: unset
 
+                        h3
+                            color: $c-blush
+
                     &:nth-child(2) .bp-video--caption
-                        color: $c-laurel
                         background-color: unset
                         order: -1
+
+                        h3
+                            color: $c-laurel
 
                 &--caption span
                     display: inline-block
@@ -331,7 +346,7 @@ body
                 &--unit
                     gap: 16px
                         
-@media only screen and (max-width: 350px)
+@media only screen and (max-width: 400px)
     .mobile #brandPage,
     .mobileapp #brandPage
         .bp
@@ -349,7 +364,10 @@ body
                     flex-direction: column
                     gap: 16px
 
-                    p, h4
+                    &--caption
                         text-align: center
+
+                        p, h4
+                            text-align: center
 
             
