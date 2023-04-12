@@ -13,24 +13,24 @@
   line-height: 30px;
   font-weight: 700;
 }
-#brandPage h4.hdl4__row {
+#brandPage h4.hdl4--row {
   font-size: 14px;
   line-height: 17.5px;
   font-weight: 400;
   text-transform: uppercase;
 }
-#brandPage h4.hdl4__column {
+#brandPage h4.hdl4--column {
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;
 }
-#brandPage p.text__normal {
+#brandPage p.text--normal {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 }
-#brandPage p.text__small {
+#brandPage p.text--small {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -51,24 +51,24 @@
   line-height: 25px;
   font-weight: 700;
 }
-.layout-0 #brandPage h4.hdl4__row {
+.layout-0 #brandPage h4.hdl4--row {
   font-size: 12px;
   line-height: 15px;
   font-weight: 400;
   text-transform: uppercase;
 }
-.layout-0 #brandPage h4.hdl4__column {
+.layout-0 #brandPage h4.hdl4--column {
   font-size: 14px;
   line-height: 17.5px;
   font-weight: 500;
   text-transform: uppercase;
 }
-.layout-0 #brandPage p.text__normal {
+.layout-0 #brandPage p.text--normal {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
 }
-.layout-0 #brandPage p.text__small {
+.layout-0 #brandPage p.text--small {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -93,28 +93,28 @@
     line-height: 25px;
     font-weight: 700;
   }
-  .mobile #brandPage h4.hdl4__row,
-  .mobileapp #brandPage h4.hdl4__row {
+  .mobile #brandPage h4.hdl4--row,
+  .mobileapp #brandPage h4.hdl4--row {
     font-size: 12px;
     line-height: 15px;
     font-weight: 400;
     text-transform: uppercase;
   }
-  .mobile #brandPage h4.hdl4__column,
-  .mobileapp #brandPage h4.hdl4__column {
+  .mobile #brandPage h4.hdl4--column,
+  .mobileapp #brandPage h4.hdl4--column {
     font-size: 14px;
     line-height: 17.5px;
     font-weight: 500;
     text-transform: uppercase;
   }
-  .mobile #brandPage p.text__normal,
-  .mobileapp #brandPage p.text__normal {
+  .mobile #brandPage p.text--normal,
+  .mobileapp #brandPage p.text--normal {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
   }
-  .mobile #brandPage p.text__small,
-  .mobileapp #brandPage p.text__small {
+  .mobile #brandPage p.text--small,
+  .mobileapp #brandPage p.text--small {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
@@ -139,28 +139,28 @@
     line-height: 20px;
     font-weight: 700;
   }
-  .mobile #brandPage h4.hdl4__row,
-  .mobileapp #brandPage h4.hdl4__row {
+  .mobile #brandPage h4.hdl4--row,
+  .mobileapp #brandPage h4.hdl4--row {
     font-size: 12px;
     line-height: 15px;
     font-weight: 400;
     text-transform: uppercase;
   }
-  .mobile #brandPage h4.hdl4__column,
-  .mobileapp #brandPage h4.hdl4__column {
+  .mobile #brandPage h4.hdl4--column,
+  .mobileapp #brandPage h4.hdl4--column {
     font-size: 12px;
     line-height: 15px;
     font-weight: 500;
     text-transform: uppercase;
   }
-  .mobile #brandPage p.text__normal,
-  .mobileapp #brandPage p.text__normal {
+  .mobile #brandPage p.text--normal,
+  .mobileapp #brandPage p.text--normal {
     font-size: 13px;
     line-height: 19.5px;
     font-weight: 400;
   }
-  .mobile #brandPage p.text__small,
-  .mobileapp #brandPage p.text__small {
+  .mobile #brandPage p.text--small,
+  .mobileapp #brandPage p.text--small {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
@@ -228,36 +228,36 @@
   background-color: #e0e0e0;
   box-shadow: none;
 }
-#brandPage .alza-btn__disabled {
+#brandPage .alza-btn--disabled {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: none;
 }
-#brandPage .alza-layout__10 {
+#brandPage .alza-layout--10 {
   margin-left: 96px;
   margin-right: 96px;
 }
-#brandPage .alza-layout__12 {
+#brandPage .alza-layout--12 {
   margin-left: 30px;
   margin-right: 30px;
 }
 #brandPage .alza-section {
   margin-top: 64px;
 }
-#brandPage .alza-section--caption {
+#brandPage .alza-section__caption {
   margin-bottom: 36px;
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.layout-0 #brandPage .alza-layout__10 {
+.layout-0 #brandPage .alza-layout--10 {
   margin-left: 15px;
   margin-right: 15px;
 }
 
 @media only screen and (max-width: 809px) {
-  .mobile #brandPage .alza-layout__10,
-  .mobileapp #brandPage .alza-layout__10 {
+  .mobile #brandPage .alza-layout--10,
+  .mobileapp #brandPage .alza-layout--10 {
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -272,23 +272,41 @@
   }
 }
 #layout_switch {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   left: 20px;
   top: 20px;
   z-index: 100;
+  width: 180px;
+  height: 70px;
+  background: white;
+  box-shadow: 0px 2px 4px 0px rgba(128, 128, 128, 0.3);
+  border-radius: 5px;
 }
 #layout_switch button {
-  display: block;
-  color: #fff;
-  background: #631B78;
-  font-size: 10px;
-  width: 24px;
-  height: 24px;
-  border-radius: 100%;
-  margin-bottom: 5px;
-  box-shadow: 0px 4px 10px 0px rgba(68, 3, 68, 0.3333333333);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 0px 2px 4px 0px rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+  width: 45px;
+  height: 45px;
+  margin: 5px;
   cursor: pointer;
   border: none;
+}
+#layout_switch button .icon {
+  width: 30px;
+  height: 30px;
+  fill: #737373;
+}
+#layout_switch button.active {
+  box-shadow: inset 0px 2px 4px 0px rgba(128, 128, 128, 0.7);
 }
 
 #brandPage {
@@ -342,11 +360,11 @@
   background-color: #d4d8d8;
   box-shadow: none;
 }
-#brandPage .bp-revealer__disabled {
+#brandPage .bp-revealer--disabled {
   background-color: rgba(244, 245, 245, 0.5);
   box-shadow: none;
 }
-#brandPage .bp-revealer--container {
+#brandPage .bp-revealer__container {
   padding-bottom: 48px;
   margin: auto;
   width: 120px;
@@ -390,23 +408,23 @@
   flex-direction: column;
   gap: 48px;
 }
-#brandPage .bp-zigzag--unit {
+#brandPage .bp-zigzag__unit {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   gap: 48px;
 }
-#brandPage .bp-zigzag--unit:nth-child(1) .bp-zigzag--caption {
+#brandPage .bp-zigzag__unit:nth-child(1) .bp-zigzag__caption {
   background-color: #0B50A2;
 }
-#brandPage .bp-zigzag--unit:nth-child(2) .bp-zigzag--caption {
+#brandPage .bp-zigzag__unit:nth-child(2) .bp-zigzag__caption {
   background-color: #EC608B;
 }
-#brandPage .bp-zigzag--unit:nth-child(3) .bp-zigzag--caption {
+#brandPage .bp-zigzag__unit:nth-child(3) .bp-zigzag__caption {
   background-color: #631B78;
 }
-#brandPage .bp-zigzag--caption {
+#brandPage .bp-zigzag__caption {
   color: #ffffff;
   width: calc((100% - 48px) / 2);
   display: flex;
@@ -416,14 +434,14 @@
   gap: 48px;
   border-radius: 4px;
 }
-#brandPage .bp-zigzag--caption p {
+#brandPage .bp-zigzag__caption p {
   padding: 0 72px;
   color: #ffffff;
 }
-#brandPage .bp-zigzag--caption h2 {
+#brandPage .bp-zigzag__caption h2 {
   color: #ffffff;
 }
-#brandPage .bp-zigzag--image {
+#brandPage .bp-zigzag__image {
   width: calc((100% - 48px) / 2);
   border-radius: 4px;
 }
@@ -435,27 +453,27 @@
   align-items: center;
   padding-left: 76px;
 }
-#brandPage .bp-row--icons {
+#brandPage .bp-row__icons {
   margin-top: 48px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-#brandPage .bp-row--unit {
+#brandPage .bp-row__unit {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 92px;
 }
-#brandPage .bp-row--unit h4 {
+#brandPage .bp-row__unit h4 {
   margin-top: 32px;
   color: #0B50A2;
 }
-#brandPage .bp-row--image {
+#brandPage .bp-row__image {
   margin-bottom: -50px;
 }
-#brandPage .bp-row p.text__normal {
+#brandPage .bp-row p.text--normal {
   font-weight: 500;
 }
 #brandPage .bp-foil {
@@ -474,27 +492,27 @@
   justify-content: space-between;
   align-items: center;
 }
-#brandPage .bp-column--icons {
+#brandPage .bp-column__icons {
   display: flex;
   flex-direction: column;
   gap: 32px;
   margin-left: 24px;
 }
-#brandPage .bp-column--unit {
+#brandPage .bp-column__unit {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   gap: 48px;
 }
-#brandPage .bp-column--unit--caption {
+#brandPage .bp-column__unit__caption {
   text-align: left;
 }
-#brandPage .bp-column--unit--caption h4 {
+#brandPage .bp-column__unit__caption h4 {
   margin-bottom: 8px;
   color: #0B50A2;
 }
-#brandPage .bp-column--image {
+#brandPage .bp-column__image {
   margin-bottom: -50px;
 }
 #brandPage .bp-video {
@@ -502,19 +520,19 @@
   flex-direction: column;
   gap: 48px;
 }
-#brandPage .bp-video--unit {
+#brandPage .bp-video__unit {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 48px;
 }
-#brandPage .bp-video--unit:nth-child(1) .bp-video--caption {
+#brandPage .bp-video__unit:nth-child(1) .bp-video__caption {
   background-color: #EC608B;
 }
-#brandPage .bp-video--unit:nth-child(2) .bp-video--caption {
+#brandPage .bp-video__unit:nth-child(2) .bp-video__caption {
   background-color: #B0CB88;
 }
-#brandPage .bp-video--caption {
+#brandPage .bp-video__caption {
   color: #ffffff;
   flex-basis: 35%;
   display: flex;
@@ -524,20 +542,20 @@
   gap: 48px;
   border-radius: 4px;
 }
-#brandPage .bp-video--caption h3 {
+#brandPage .bp-video__caption h3 {
   color: #ffffff;
 }
-#brandPage .bp-video--caption span {
+#brandPage .bp-video__caption span {
   display: block;
 }
-#brandPage .bp-video--container {
+#brandPage .bp-video__container {
   flex-basis: 65%;
 }
-#brandPage .bp-video--container div {
+#brandPage .bp-video__container div {
   position: relative;
   padding-bottom: 56.25%;
 }
-#brandPage .bp-video--container div iframe {
+#brandPage .bp-video__container div iframe {
   border-radius: 4px;
   position: absolute;
   top: 0;
@@ -553,20 +571,20 @@
   flex-direction: column;
   gap: 48px;
 }
-#brandPage .bp-footer--icons {
+#brandPage .bp-footer__icons {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 48px;
 }
-#brandPage .bp-footer--unit {
+#brandPage .bp-footer__unit {
   flex: 1 1 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
 }
-#brandPage .bp-footer .text__normal {
+#brandPage .bp-footer .text--normal {
   font-weight: 500;
 }
 #brandPage .bp-footer h3 {
@@ -585,12 +603,12 @@
 .bp-perex p {
   margin-top: 24px;
 }
-.layout-0 #brandPage-zigzag--caption p,
-.bp-zigzag--caption p {
+.layout-0 #brandPage-zigzag__caption p,
+.bp-zigzag__caption p {
   padding: 0 32px;
 }
-.layout-0 #brandPage-row--unit img,
-.bp-row--unit img {
+.layout-0 #brandPage-row__unit img,
+.bp-row__unit img {
   width: 48px;
 }
 .layout-0 #brandPage-column,
@@ -621,21 +639,21 @@
   .mobileapp #brandPage .bp-zigzag {
     gap: 16px;
   }
-  .mobile #brandPage .bp-zigzag--unit,
-  .mobileapp #brandPage .bp-zigzag--unit {
+  .mobile #brandPage .bp-zigzag__unit,
+  .mobileapp #brandPage .bp-zigzag__unit {
     gap: 16px;
   }
-  .mobile #brandPage .bp-zigzag--caption,
-  .mobileapp #brandPage .bp-zigzag--caption {
+  .mobile #brandPage .bp-zigzag__caption,
+  .mobileapp #brandPage .bp-zigzag__caption {
     width: calc((100% - 16px) / 2);
     gap: 24px;
   }
-  .mobile #brandPage .bp-zigzag--caption p,
-  .mobileapp #brandPage .bp-zigzag--caption p {
+  .mobile #brandPage .bp-zigzag__caption p,
+  .mobileapp #brandPage .bp-zigzag__caption p {
     padding: 0 32px;
   }
-  .mobile #brandPage .bp-zigzag--image,
-  .mobileapp #brandPage .bp-zigzag--image {
+  .mobile #brandPage .bp-zigzag__image,
+  .mobileapp #brandPage .bp-zigzag__image {
     width: calc((100% - 16px) / 2);
   }
   .mobile #brandPage .bp-row,
@@ -644,32 +662,32 @@
     padding-left: 16px;
     padding-right: 16px;
   }
-  .mobile #brandPage .bp-row--image,
-  .mobileapp #brandPage .bp-row--image {
+  .mobile #brandPage .bp-row__image,
+  .mobileapp #brandPage .bp-row__image {
     width: 50%;
     padding: 0 0 32px 8%;
     margin-bottom: -24px;
   }
-  .mobile #brandPage .bp-row--icons,
-  .mobileapp #brandPage .bp-row--icons {
+  .mobile #brandPage .bp-row__icons,
+  .mobileapp #brandPage .bp-row__icons {
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
   }
-  .mobile #brandPage .bp-row--unit,
-  .mobileapp #brandPage .bp-row--unit {
+  .mobile #brandPage .bp-row__unit,
+  .mobileapp #brandPage .bp-row__unit {
     width: calc((100% - 64px) / 3);
   }
-  .mobile #brandPage .bp-row--unit p,
-  .mobileapp #brandPage .bp-row--unit p {
+  .mobile #brandPage .bp-row__unit p,
+  .mobileapp #brandPage .bp-row__unit p {
     margin: 0 15px;
   }
   .mobile #brandPage .bp-column,
   .mobileapp #brandPage .bp-column {
     flex-direction: column;
   }
-  .mobile #brandPage .bp-column--image,
-  .mobileapp #brandPage .bp-column--image {
+  .mobile #brandPage .bp-column__image,
+  .mobileapp #brandPage .bp-column__image {
     width: 50%;
     margin-bottom: 16px;
   }
@@ -677,33 +695,33 @@
   .mobileapp #brandPage .bp-video {
     gap: 16px;
   }
-  .mobile #brandPage .bp-video--unit,
-  .mobileapp #brandPage .bp-video--unit {
+  .mobile #brandPage .bp-video__unit,
+  .mobileapp #brandPage .bp-video__unit {
     gap: 16px;
   }
 }
 @media only screen and (max-width: 630px) {
-  .mobile #brandPage .bp-zigzag--unit,
-  .mobileapp #brandPage .bp-zigzag--unit {
+  .mobile #brandPage .bp-zigzag__unit,
+  .mobileapp #brandPage .bp-zigzag__unit {
     flex-direction: column;
   }
-  .mobile #brandPage .bp-zigzag--unit:nth-of-type(2) img,
-  .mobileapp #brandPage .bp-zigzag--unit:nth-of-type(2) img {
+  .mobile #brandPage .bp-zigzag__unit:nth-of-type(2) img,
+  .mobileapp #brandPage .bp-zigzag__unit:nth-of-type(2) img {
     order: 1;
   }
-  .mobile #brandPage .bp-zigzag--caption,
-  .mobileapp #brandPage .bp-zigzag--caption {
+  .mobile #brandPage .bp-zigzag__caption,
+  .mobileapp #brandPage .bp-zigzag__caption {
     position: relative;
     width: 100%;
     height: 0;
     padding-bottom: 100%;
   }
-  .mobile #brandPage .bp-zigzag--caption h2,
-  .mobileapp #brandPage .bp-zigzag--caption h2 {
+  .mobile #brandPage .bp-zigzag__caption h2,
+  .mobileapp #brandPage .bp-zigzag__caption h2 {
     margin-top: 100%;
   }
-  .mobile #brandPage .bp-zigzag--image,
-  .mobileapp #brandPage .bp-zigzag--image {
+  .mobile #brandPage .bp-zigzag__image,
+  .mobileapp #brandPage .bp-zigzag__image {
     width: 100%;
   }
   .mobile #brandPage .bp-foil h3,
@@ -717,29 +735,29 @@
   .mobileapp #brandPage .bp-video {
     gap: 48px;
   }
-  .mobile #brandPage .bp-video--unit,
-  .mobileapp #brandPage .bp-video--unit {
+  .mobile #brandPage .bp-video__unit,
+  .mobileapp #brandPage .bp-video__unit {
     flex-direction: column;
   }
-  .mobile #brandPage .bp-video--unit:nth-child(1) .bp-video--caption,
-  .mobileapp #brandPage .bp-video--unit:nth-child(1) .bp-video--caption {
+  .mobile #brandPage .bp-video__unit:nth-child(1) .bp-video__caption,
+  .mobileapp #brandPage .bp-video__unit:nth-child(1) .bp-video__caption {
     background-color: unset;
   }
-  .mobile #brandPage .bp-video--unit:nth-child(1) .bp-video--caption h3,
-  .mobileapp #brandPage .bp-video--unit:nth-child(1) .bp-video--caption h3 {
+  .mobile #brandPage .bp-video__unit:nth-child(1) .bp-video__caption h3,
+  .mobileapp #brandPage .bp-video__unit:nth-child(1) .bp-video__caption h3 {
     color: #EC608B;
   }
-  .mobile #brandPage .bp-video--unit:nth-child(2) .bp-video--caption,
-  .mobileapp #brandPage .bp-video--unit:nth-child(2) .bp-video--caption {
+  .mobile #brandPage .bp-video__unit:nth-child(2) .bp-video__caption,
+  .mobileapp #brandPage .bp-video__unit:nth-child(2) .bp-video__caption {
     background-color: unset;
     order: -1;
   }
-  .mobile #brandPage .bp-video--unit:nth-child(2) .bp-video--caption h3,
-  .mobileapp #brandPage .bp-video--unit:nth-child(2) .bp-video--caption h3 {
+  .mobile #brandPage .bp-video__unit:nth-child(2) .bp-video__caption h3,
+  .mobileapp #brandPage .bp-video__unit:nth-child(2) .bp-video__caption h3 {
     color: #B0CB88;
   }
-  .mobile #brandPage .bp-video--caption span,
-  .mobileapp #brandPage .bp-video--caption span {
+  .mobile #brandPage .bp-video__caption span,
+  .mobileapp #brandPage .bp-video__caption span {
     display: inline-block;
     margin-left: 6px;
   }
@@ -747,38 +765,38 @@
   .mobileapp #brandPage .bp-footer {
     gap: 32px;
   }
-  .mobile #brandPage .bp-footer--icons,
-  .mobileapp #brandPage .bp-footer--icons {
+  .mobile #brandPage .bp-footer__icons,
+  .mobileapp #brandPage .bp-footer__icons {
     flex-direction: column;
     gap: 32px;
   }
-  .mobile #brandPage .bp-footer--unit,
-  .mobileapp #brandPage .bp-footer--unit {
+  .mobile #brandPage .bp-footer__unit,
+  .mobileapp #brandPage .bp-footer__unit {
     gap: 16px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .mobile #brandPage .bp-row--unit img,
-  .mobileapp #brandPage .bp-row--unit img {
+  .mobile #brandPage .bp-row__unit img,
+  .mobileapp #brandPage .bp-row__unit img {
     width: 48px;
   }
-  .mobile #brandPage .bp-column--icons,
-  .mobileapp #brandPage .bp-column--icons {
+  .mobile #brandPage .bp-column__icons,
+  .mobileapp #brandPage .bp-column__icons {
     margin-left: 0;
     margin-top: 32px;
   }
-  .mobile #brandPage .bp-column--unit,
-  .mobileapp #brandPage .bp-column--unit {
+  .mobile #brandPage .bp-column__unit,
+  .mobileapp #brandPage .bp-column__unit {
     flex-direction: column;
     gap: 16px;
   }
-  .mobile #brandPage .bp-column--unit--caption,
-  .mobileapp #brandPage .bp-column--unit--caption {
+  .mobile #brandPage .bp-column__unit__caption,
+  .mobileapp #brandPage .bp-column__unit__caption {
     text-align: center;
   }
-  .mobile #brandPage .bp-column--unit--caption p, .mobile #brandPage .bp-column--unit--caption h4,
-  .mobileapp #brandPage .bp-column--unit--caption p,
-  .mobileapp #brandPage .bp-column--unit--caption h4 {
+  .mobile #brandPage .bp-column__unit__caption p, .mobile #brandPage .bp-column__unit__caption h4,
+  .mobileapp #brandPage .bp-column__unit__caption p,
+  .mobileapp #brandPage .bp-column__unit__caption h4 {
     text-align: center;
   }
 }

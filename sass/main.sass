@@ -36,21 +36,21 @@
             @include flexVert
             gap: 48px
 
-            &--unit
+            &__unit
                 @include flexOr
                 justify-content: space-between
                 gap: 48px
 
-                &:nth-child(1) .bp-zigzag--caption
+                &:nth-child(1) .bp-zigzag__caption
                     background-color: $c-usafa
 
-                &:nth-child(2) .bp-zigzag--caption
+                &:nth-child(2) .bp-zigzag__caption
                     background-color: $c-blush
 
-                &:nth-child(3) .bp-zigzag--caption
+                &:nth-child(3) .bp-zigzag__caption
                     background-color: $c-plum
                     
-            &--caption
+            &__caption
                 color:  $c-white
                 width: calc((100% - 48px) / 2)
                 @include flexVert
@@ -67,7 +67,7 @@
                     color: $c-white
 
 
-            &--image
+            &__image
                 width: calc((100% - 48px) / 2)
                 border-radius: 4px
 
@@ -77,12 +77,12 @@
             align-items: center
             padding-left: 76px
 
-            &--icons
+            &__icons
                 margin-top: 48px
                 @include flexOr
                 justify-content: space-between
 
-            &--unit
+            &__unit
                 @include flexVert
                 align-items: center
                 width: 92px
@@ -91,10 +91,10 @@
                     margin-top: 32px
                     color: $c-usafa
 
-            &--image
+            &__image
                 margin-bottom: -50px
 
-            p.text__normal
+            p.text--normal
                 font-weight: 500
 
         &-foil
@@ -111,41 +111,41 @@
             justify-content: space-between
             align-items: center
 
-            &--icons
+            &__icons
                 @include flexVert
                 gap: 32px
                 margin-left: 24px
 
-            &--unit
+            &__unit
                 @include flexOr
                 align-items: center
                 gap: 48px
 
-                &--caption
+                &__caption
                     text-align: left
 
                     h4
                         margin-bottom: 8px
                         color: $c-usafa
 
-            &--image
+            &__image
                 margin-bottom: -50px
 
         &-video
             @include flexVert
             gap: 48px
 
-            &--unit
+            &__unit
                 @include flexOr
                 gap: 48px
 
-                &:nth-child(1) .bp-video--caption
+                &:nth-child(1) .bp-video__caption
                     background-color: $c-blush
 
-                &:nth-child(2) .bp-video--caption
+                &:nth-child(2) .bp-video__caption
                     background-color: $c-laurel
 
-            &--caption
+            &__caption
                 color:  $c-white
                 flex-basis: 35%
                 @include flexVert
@@ -160,7 +160,7 @@
                 span
                     display: block
 
-            &--container
+            &__container
                 flex-basis: 65%
 
                 div
@@ -182,17 +182,17 @@
             @include flexVert
             gap: 48px
 
-            &--icons
+            &__icons
                 @include flexOr
                 gap: 48px
 
-            &--unit
+            &__unit
                 flex: 1 1 0
                 @include flexVert
                 align-items: center
                 gap: 32px
 
-            .text__normal
+            .text--normal
                 font-weight: 500
 
             h3
@@ -210,10 +210,10 @@
         &-perex p
             margin-top: 24px
 
-        &-zigzag--caption p
+        &-zigzag__caption p
                 padding: 0 32px
 
-        &-row--unit img
+        &-row__unit img
             width: 48px
 
         &-column
@@ -239,17 +239,17 @@
             &-zigzag
                 gap: 16px
 
-                &--unit
+                &__unit
                     gap: 16px
 
-                &--caption
+                &__caption
                     width: calc((100% - 16px) / 2)
                     gap: 24px
 
                     p
                         padding: 0 32px
 
-                &--image
+                &__image
                     width: calc((100% - 16px) / 2)
 
             &-row
@@ -257,17 +257,17 @@
                 padding-left: 16px
                 padding-right: 16px
 
-                &--image
+                &__image
                     width: 50%
                     padding: 0 0 32px 8%
                     margin-bottom: -24px
 
-                &--icons
+                &__icons
                     flex-wrap: wrap
                     justify-content: center
                     gap: 32px
 
-                &--unit
+                &__unit
                     width: calc((100% - 32px * (3 - 1)) / 3)
 
                     p
@@ -276,14 +276,14 @@
             &-column
                 flex-direction: column
 
-                &--image
+                &__image
                     width: 50%
                     margin-bottom: 16px
 
             &-video
                 gap: 16px
 
-                &--unit
+                &__unit
                     gap: 16px
 
 @media only screen and (max-width: 630px)
@@ -291,13 +291,13 @@
     .mobileapp #brandPage
         .bp
             &-zigzag
-                &--unit
+                &__unit
                     flex-direction: column
 
                     &:nth-of-type(2) img
                         order: 1   
 
-                &--caption
+                &__caption
                     position: relative
                     width: 100%
                     height: 0
@@ -306,7 +306,7 @@
                     h2
                         margin-top: 100%
 
-                &--image
+                &__image
                     width: 100%
 
             &-foil h3
@@ -316,34 +316,34 @@
             &-video
                 gap: 48px 
 
-                &--unit
+                &__unit
                     flex-direction: column
 
-                    &:nth-child(1) .bp-video--caption
+                    &:nth-child(1) .bp-video__caption
                         background-color: unset
 
                         h3
                             color: $c-blush
 
-                    &:nth-child(2) .bp-video--caption
+                    &:nth-child(2) .bp-video__caption
                         background-color: unset
                         order: -1
 
                         h3
                             color: $c-laurel
 
-                &--caption span
+                &__caption span
                     display: inline-block
                     margin-left: 6px
 
             &-footer
                 gap: 32px
 
-                &--icons
+                &__icons
                     flex-direction: column
                     gap: 32px
 
-                &--unit
+                &__unit
                     gap: 16px
                         
 @media only screen and (max-width: 400px)
@@ -351,20 +351,20 @@
     .mobileapp #brandPage
         .bp
             &-row
-                &--unit
+                &__unit
                     img
                         width: 48px
 
             &-column
-                &--icons
+                &__icons
                     margin-left: 0
                     margin-top: 32px
 
-                &--unit
+                &__unit
                     flex-direction: column
                     gap: 16px
 
-                    &--caption
+                    &__caption
                         text-align: center
 
                         p, h4
